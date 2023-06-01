@@ -6,82 +6,107 @@
 }
 
 body {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    margin: 0;
+}
+
+input{
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid rgba(194, 174, 102, 0.405);
+    background-color: #e4ba455b;
+
+}
+
+select{
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid rgba(184, 163, 87, 0.405);
+    background-color: #eac5204e;
+    color: aliceblue;
+
+}
+
+
+
+
+
+.fundo{
     display: flex;
+    height: 100%;
+    width: 100%;
+    background: url("../img/fundo.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.formulario{
+    margin: 5%;
+    padding: 5%;
+    width: 30%; /*largura */
+    height: 85%;/*altura*/
     justify-content: center;
-    align-items: center;
-    background-color: #fdfcce;
+    align-items: center; 
+    flex-direction: row;
+   backdrop-filter: blur(4px); /* Para deixar o fundo transparente*/
+    border-radius: 5%; /* Para arredondar as bordas*/
+    border: 1px solid rgba(245, 211, 19, 0.182);
+    background-color: rgba(231, 217, 15, 0.214);
+    position: absolute;
+    left: 28%;
 }
-
-for {
-    max-width:500px;
-    margin: 0 auto;
-    background-color:  #d83018;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgb(77, 45, 45);
-}
-
-a {
-    text-decoration: none;
-    border: 1px solid white;
-    border-radius: 8px;
-    background-color: white;
-    padding: 4px;
-    width: 180px;
-    text-align: center;
-    font-family: serif;
-    color: #e1ad72;
-}
-
-.pagina {
-    width:80%;
-    height:80%;
-    display: flex;
-    border-radius: 1em;
-    background: rgb(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.37);
-}
-
-.bloco-imag {
-    width: 60%;
-    display: flex;
+.nome {
+    margin: 3%;
+    padding: 2%;
     justify-content: center;
-    padding: 1rem;
+    color: white; 
+      
 }
 
-.bloco-form {
-    width:40%; 
-    border-radius: 1em;
-    display: flex;
+.pessoas{
+    margin: 3%;
+    padding: 2%;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #3a3232;
-    padding: 3rem;
+    color: white; 
+
+   
+    
+
 }
 
-.imag{
-    width: 760%;
-    border-radius: 1rem;
+.prato{
+    margin: 3%;
+    padding: 2%;
+    justify-content: center;
+    color: white;
+
+
+   
 }
 
-h2{
-    font-family: monospace;
-    color: #984810;
-    font-weight: 700;
-    padding: 8px;
+.butao{
+    margin: 5%;
+
+
+   
 }
 
-label{
-    font-family: monospace;
-    border: 1px solid white;
-    border-radius: 8px;
-    background-color: white;
-    padding: 4px;
-    width: 180px;
-    text-align: center;
-    color: #e1ad72;
+
+.input_pessoa{
+
+    width: 32%;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid rgba(184, 160, 87, 0.405);
+
 }
+
+.input_butao{
+    width: 30%;
+    height: 30%;
+}
+
+
+
+

@@ -25,36 +25,54 @@ if (!$conexao) {
 ?>
 
 <body>
-    <div class="pagina">
-        <div class="bloco-imag">
-            <img class="imag" src="assets/img/fundo.jpg" alt="">
-        </div>
-        <div class="bloco-form">
-            <h2>
-                Confirme a sua presença
-            </h2>
-            <form action="agradecimento.php" method="post">
-                <label for="nome">Nome</label>
+    <div class="fundo">
+        
+        <div class="formulario">
+            <h1>Convite</h1>
+            <p>Convido você e a sua familia para a nossa festa 
+                junina que sera dia 17/06/2023 as 20:00 cada 
+                convidado com criaça tem a taxa de 50,00 que sera
+                 incluso o pula pula para as crianças bricarem e
+                  a mesa para acomodar toda familia, convidados sem crianças 
+                  tem a taxa de 20,00, cada familia sera responsavel de levar 
+                  uma comida tipica.
+            </p>
+        <form action="agradecimento.php" method="post">
+            <div class="nome">
+                <label for="nome">Nome: </label>
                 <input type="text" id="nome" name="nome">
-                <label for="quantas_pessoas">Quantas pessoas </label>
-                <input type="text" id="quantas_pessoas" name="quantas_pessoas">
-                <label for="prato">Escolha o prato para levar:</label>
+            </div>
+
+            <div class="pessoas">
+                <label for="quantas_pessoas">Quantas pessoas: </label>
+                <input class="input_pessoa" type="text" id="quantas_pessoas" name="quantas_pessoas">
+            </div>
+
+            <div class="prato">
+                <label for="prato">Escolha o prato para levar: </label>
                 <select name="prato" id="prato" name="prato">
-                <?php
-            	  // Consulta na tabela de autores
-				  $sql = "SELECT * FROM prato";
-				  $resultado = mysqli_query($conexao, $sql);
-				  // Loop para exibir os resultados e preencher o select
-				  while ($autor = mysqli_fetch_array($resultado)) {
-					echo "<option value='" . $prato['codigo'] . "'>" . $prato['nome'] . "</option>";
-				}
-                // Fechar a conexão com o banco de dados
-                mysqli_close($conexao);
-                ?>
+                    <?php
+                    // Consulta na tabela de autores
+                    $sql = "SELECT * FROM prato";
+                    $resultado = mysqli_query($conexao, $sql);
+                    // Loop para exibir os resultados e preencher o select
+                    while ($autor = mysqli_fetch_array($resultado)) {
+                        echo "<option value='" . $prato['codigo'] . "'>" . $prato['nome'] . "</option>";
+                    }
+                    // Fechar a conexão com o banco de dados
+                    mysqli_close($conexao);
+                    ?>
                 </select>
-                <input type="submit" value="Confirma">
-            </form>
+            </div>
+
+            <div class="butao">
+                <input class="input_butao" type="submit" value="Confirma">
+            </div>
+            <p>OBS: Convidado não convida.</p>
+        </form>
         </div>
     </div>
+
 </body>
+
 </html>
