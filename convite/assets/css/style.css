@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -6,74 +8,137 @@
 }
 
 body {
+    height: 100vh;
+    width: 100vw;
+    background: url("../img/fundo.jpg");
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+main {
+    height: 80%;
+    width: 80%;
+    backdrop-filter: blur(4px);
+    display: flex;
 }
 
-input{
-    border-radius: 10px 10px 10px 10px;
-    border: 1px solid rgba(194, 174, 102, 0.405);
-    background-color: #e4ba455b;
+form{
+    padding: 1.6em;
+    height: 60%;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px black;
 
+    background: linear-gradient(-45deg, red, orangered, orange, yellow, green, rgb(0, 255, 119), rgb(0, 217, 255), blue, purple, rgb(233, 84, 109), red);
+    background-size: 400% 400%;
+    animation: infinite;
+    animation-name: gradient;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 25%;
+    }
+    25% {
+
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+input, textarea {
+    width: 70%;
+    border-radius: 6px;
+    border: 1px solid whitesmoke;
+    background-color: #e4ba455b;
+    text-align: center;
 }
 
 select{
-    border-radius: 10px 10px 10px 10px;
-    border: 1px solid rgba(184, 163, 87, 0.405);
+    text-align: center;
+    width: 70%;
+    border-radius: 6px;
+    border: 1px solid whitesmoke;
     background-color: #eac5204e;
     color: aliceblue;
-
 }
 
+button {
+    color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.245);
+    border-radius: 6px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    border: hidden;
+    transition: 0.4s;
+    cursor: pointer;
+}
 
-
-
-
-.fundo{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background: url("../img/fundo.jpg");
-    background-position: center;
-    background-size: cover;
-
+button:hover {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    padding-bottom: 0.6em;
+    padding-top: 0.6em;
 }
 
 .formulario{
-    margin: 5%;
-    padding: 5%;
-    width: 30%; /*largura */
-    height: 85%;/*altura*/
+    display: flex;
+    flex-direction: column;
+    width: 60%;
     justify-content: center;
-    align-items: center; 
-    flex-direction: row;
-   backdrop-filter: blur(4px); /* Para deixar o fundo transparente*/
-    border-radius: 5%; /* Para arredondar as bordas*/
-    border: 1px solid rgba(245, 211, 19, 0.182);
-    background-color: rgba(231, 217, 15, 0.214);
-    position: absolute;
-    left: 28%;
-}
-.nome {
-    margin: 3%;
-    padding: 2%;
-    justify-content: center;
-    color: white; 
-      
+    align-items: center;
+    align-content: center;
+
 }
 
-.pessoas{
-    margin: 3%;
-    padding: 2%;
+.texto {
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    width: 10vw;
+    height: 6vh;    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.texto p {
+    width: 90%;
+    color: antiquewhite;
+    font-size: 100%;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 600;
+    text-shadow: 2px 2px 3px black;
+}
+
+.linha {
+    width: 100%;
+    display: inline-flex;
+    margin: 2%;
     justify-content: center;
-    color: white; 
+    align-items: center;
+}
 
-   
-    
-
+label {
+    width: 30%;
 }
 
 .prato{
@@ -101,12 +166,5 @@ select{
     border: 1px solid rgba(184, 160, 87, 0.405);
 
 }
-
-.input_butao{
-    width: 30%;
-    height: 30%;
-}
-
-
 
 
