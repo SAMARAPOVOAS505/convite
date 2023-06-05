@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: url("../img/fundo.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+main {
+    height: 70%;
+    width: 70%;
+    backdrop-filter: blur(4px);
+    display: flex;
+}
+
+form{
+    border: 1px solid rgb(251, 245, 245);
+    padding: 5%;
+    height: 60%;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px black;
+    backdrop-filter: blur(4px);
+    background-size: 400% 400%;
+    animation: infinite;
+    animation-name: gradient;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 25%;
+    }
+    25% {
+
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+input, textarea {
+    width: 70%;
+    border-radius: 6px;
+    border: 1px solid whitesmoke;
+    background-color: #4633038b;
+    text-align: center;
+    color: aliceblue;
+}
+
+select{
+    text-align: center;
+    width: 70%;
+    border-radius: 6px;
+    border: 1px solid whitesmoke;
+    background-color: #4633038b;
+    color: aliceblue;
+}
+
+button {
+    color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.245);
+    border-radius: 6px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    border: hidden;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    padding-bottom: 0.6em;
+    padding-top: 0.6em;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.texto {
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    width: 10vw;
+    height: 6vh;    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.texto p {
+    width: 90%;
+    color: antiquewhite;
+    font-size: 100%;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 600;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.377);
+    text-decoration: none;
+}
+
+.linha {
+    width: 100%;
+    display: inline-flex;
+    margin: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    width: 30%;
+}
+
+.prato{
+    margin: 3%;
+    padding: 2%;
+    justify-content: center;
+    color: white;
+
+
+   
+}
+
+.butao{
+    margin: 5%;
+
+
+   
+}
+
+
+.input_pessoa{
+
+    width: 32%;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid rgba(184, 160, 87, 0.405);
+
+}
+
+
+
