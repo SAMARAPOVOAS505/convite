@@ -19,16 +19,18 @@ body {
 }
 a{
     text-decoration: none;
+    color: aliceblue;
 }
 main {
-    height: 80%;
-    width: 80%;
+    height: 70%;
+    width: 70%;
     backdrop-filter: blur(4px);
     display: flex;
 }
 
 form{
-    padding: 1.6em;
+    border: 1px solid rgb(251, 245, 245);
+    padding: 5%;
     height: 60%;
     border-radius: 2em;
     display: flex;
@@ -39,8 +41,7 @@ form{
     align-content: stretch;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 3px black;
-
-    background: linear-gradient(-45deg, red, orangered, orange, yellow, green, rgb(0, 255, 119), rgb(0, 217, 255), blue, purple, rgb(233, 84, 109), red);
+    backdrop-filter: blur(4px);
     background-size: 400% 400%;
     animation: infinite;
     animation-name: gradient;
@@ -67,8 +68,9 @@ input, textarea {
     width: 70%;
     border-radius: 6px;
     border: 1px solid whitesmoke;
-    background-color: #e4ba455b;
+    background-color: #4633038b;
     text-align: center;
+    color: aliceblue;
 }
 
 select{
@@ -76,7 +78,7 @@ select{
     width: 70%;
     border-radius: 6px;
     border: 1px solid whitesmoke;
-    background-color: #eac5204e;
+    background-color: #4633038b;
     color: aliceblue;
 }
 
@@ -126,7 +128,8 @@ button:hover {
     font-size: 100%;
     font-family: 'Josefin Slab', serif;
     font-weight: 600;
-    text-shadow: 2px 2px 3px black;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.377);
+    text-decoration: none;
 }
 
 .linha {
@@ -166,5 +169,6 @@ label {
     border: 1px solid rgba(184, 160, 87, 0.405);
 
 }
+
 
 

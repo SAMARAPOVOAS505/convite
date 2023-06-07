@@ -38,12 +38,12 @@ if (!$conexao) {
                 </div>
                 <div class="linha">
                     <label for="nome">Nome: </label>
-                    <input type="text" id="nome" name="nome">
+                    <input type="text" id="nome" name="nome" placeholder="Nome da Chefe da família">
                 </div>
 
                 <div class="linha">
                     <label for="quantas_pessoas">Quantas pessoas: </label>
-                    <input type="text" id="quantas_pessoas" name="quantas_pessoas">
+                    <input type="text" id="quantas_pessoas" name="quantas_pessoas" placeholder="Quantas pessoas vão com você">
                 </div>
 
                 <div class="linha">
@@ -64,11 +64,11 @@ if (!$conexao) {
                 </div>
 
                 <div class="linha">
-                    <button type="submit">Confirmar</button>
-                </div>
-                <a href="https://chat.whatsapp.com/ItszX6zNNczLQgxYzdzzqY">Entrar no Grupo</a><br>
+                    <button type="submit">Confirmar</button><br>
+                    <a href="https://chat.whatsapp.com/ItszX6zNNczLQgxYzdzzqY">Entre no Grupo</a>
+                </div >
                 <p> Convido você e a sua família para a nossa festa junina, que será dia 17/06/2023 às 20:00.
-                 Cada família com criaça pagaram a taxa de R$50,00 que está incluso o pula-pula, piscina de bolinhas e a mesa para acomodar toda família. 
+                 Cada família com criaça pagaram a taxa de R$50,00 que está incluso o pula-pula e a mesa para acomodar toda família. 
                  Convidados sem crianças pagaram a taxa de R$20,00 que será a mesa para se acomodar.
                  Cada família  terá a responsabilidade de levar uma comida típica para a festa.</p><br>
                    
